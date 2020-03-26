@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Donate">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Donate"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Donate, a massive portion of the donation would go to health organizations and medical facilities around the world.You can donate as many times as you want."
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        >
+
+    <Button
+        android:id="@+id/d1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="DONATE $0.99"
+        android:background="@drawable/btn"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+        <Button
+            android:id="@+id/d2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="DONATE $14.99"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/d3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="DONATE $34.99"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/d4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="DONATE $49.99"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/d5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="DONATE $99.99"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Health Investigation"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:id="@+id/typing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12dp"
+            android:padding="6dp"
+            android:text="Typing....."
+            android:textStyle="italic"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pack1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Hello, I'm Sayrah and i'm here to help you if you feel sick"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pack2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack1"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="If you tell me about your fevers and symptoms, i'll give you tips on how to feel better, and if you should seek instant medication"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pack3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack2"
+        android:visibility="invisible">
+
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:padding="8dp"
+            android:src="@drawable/do_the_five"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack3"
+        android:visibility="invisible">
+
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Well, Thanks"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack3"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/s_sms_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Well, Thanks"
+            android:background="@drawable/chat_bubble_blue"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack4"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="OK, let's get you set up right away then"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack6"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="What's your name? PS Adding your last name isn't mandatory."
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack7"
+        android:visibility="invisible">
+
+
+        <EditText
+            android:id="@+id/chat_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:hint="Name"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:layout_marginRight="60dp"
+            android:inputType="text"
+            />
+
+        <ImageView
+            android:id="@+id/send_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_black_32dp"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack7"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/get_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Get Name"
+            android:background="@drawable/chat_bubble_blue"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack9"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Love that name."
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack10"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="What year were you born? Knowing this will help me give you the age-related tips and guidance you need"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pack12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack11"
+        android:visibility="invisible">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:entries="@array/year"
+            />
+
+        <ImageView
+            android:id="@+id/send_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_black_32dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack11"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/get_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Get Year"
+            android:background="@drawable/chat_bubble_blue"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack12"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Since you are younger than 50 years old, I would advice you stay indoors even if the virus is unlikely to be lethal to you, you could still be transmitting it to others, worse people with underlying health conditions and the elderly. So if you do not already know by now please self-isolate yourself."
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack12"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="Since you are 50 plus years, I would advice you stay indoors and do not go outside too often or at all, as the Coronavirus could be very lethal to you. Please self-isolate yourself."
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack13"
+        android:visibility="invisible">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/chat_bubble_grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text= "So now tell me how many of the symptoms below are you experiencing right now? "
+
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cough"
+                android:id="@+id/check1"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runny Nose"
+                android:id="@+id/check2"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sore Throat"
+                android:id="@+id/check3"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fever"
+                android:id="@+id/check4"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficulty breathing or shortness of breath"
+                android:id="@+id/check5"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persistent pain or pressure in the chest"
+                android:id="@+id/check6"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bluish lips or face"
+                android:id="@+id/check7"/>
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack15"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="If you do not experience any of these symptoms, good. I would be sending you notifications every day and some personal hygiene notifications every hour to remind you and keep you safe and protected"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack16"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="For now stay safe wash your hands up to 3 times a day especially when you just came back from outside, social distance yourself from others and avoid large gatherings. Please don't forget to donate in the donate section as you would be helping a lot of people by doing so. Thanks"
+            android:background="@drawable/chat_bubble_grey"
+            android:textColor="@color/black"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:autoLink="all"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pack19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack17"
+        android:visibility="invisible">
+
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="OK, sure!"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pack20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack17"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/end_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="OK, sure!  Thanks for the chat I will make sure I stay safe and practice all safety measures"
+            android:background="@drawable/chat_bubble_blue"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/pack18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/pack20"
+        android:visibility="invisible">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:text="According to your number of symptoms I advice you get tested for COVID-19 as soon as possible. Please be cautious. Thank you."
+            android:background="@drawable/red_btn"
+            android:textColor="@color/white"
+            android:maxWidth="280dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
